@@ -28,6 +28,17 @@ namespace LeapYear.Tests
         }
         
         [Theory]
+        [InlineData(400)]
+        [InlineData(800)]
+        [InlineData(2000)]
+        public void BeTrueWhenDivisibleBy100And400(int year)
+        {
+            Assert.True(LeapYear.IsLeap(year));
+        }
+        
+        
+        
+        [Theory]
         [InlineData(2004)]
         [InlineData(2008)]
         [InlineData(2012)]
