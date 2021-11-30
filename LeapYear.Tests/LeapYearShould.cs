@@ -16,10 +16,7 @@ namespace LeapYear.Tests
         {
             Assert.False(LeapYear.IsLeap(399));
         }
-        
-        
-        
-        
+
     }
 
 }
