@@ -18,11 +18,16 @@ namespace LeapYear.Tests
         }
         
                 
-        [Fact]
-        public void BeFalseWhenDivisibleBy100ButNotBy400()
+        [Theory]
+        [InlineData(100)]
+        [InlineData(200)]
+        [InlineData(300)]
+        public void BeFalseWhenDivisibleBy100ButNotBy400(int year)
         {
-            Assert.False(LeapYear.IsLeap(300));
+            Assert.False(LeapYear.IsLeap(year));
         }
+        
+        
 
     }
 
