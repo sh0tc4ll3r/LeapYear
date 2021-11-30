@@ -27,6 +27,12 @@ namespace LeapYear.Tests
             Assert.False(LeapYear.IsLeap(year));
         }
         
+        [Fact]
+        public void BeFalseWhenDivisibleBy4ButNotBy100()
+        {
+            Assert.False(LeapYear.IsLeap(2004));
+        }
+        
         
 
     }
