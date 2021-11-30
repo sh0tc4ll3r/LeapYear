@@ -10,6 +10,12 @@ namespace LeapYear.Tests
         {
             Assert.True(LeapYear.IsLeap(2000));
         }
+        
+        [Fact]
+        public void BeFalseWhen399()
+        {
+            Assert.False(LeapYear.IsLeap(399));
+        }
     }
 
 }
